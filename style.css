@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    color: white;
+    min-height: 100%;
+    margin: 0;
+    background-image: url("Rainbow-Vortex.svg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page-container {
+    min-height: 100vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 80%;
+}
+
+#main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 5% 95%;
+}
+
+#inp {
+    grid-column: 1 / span 4;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0px;
+    height: 100%;
+}
+
+#task-inp {
+    text-size-adjust: 30;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#add-button {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+}
+
+#add-button, #task-inp {
+    border-radius: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    outline: none;
+}
+
+#add-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#add-button:active {
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
