@@ -24,36 +24,56 @@ body {
 #main-container {
     height: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 5% 95%;
+    grid-template-columns: auto auto auto 15%;
+    grid-template-rows: 15% 85%;
+}
+
+#inp-sec {
+    grid-column: 1 / span 4;
+    height: auto;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0;
 }
 
 #inp {
-    grid-column: 1 / span 4;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 0px;
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 70%;
+}
+
+#inp-lab {
+    padding-top: 0.6%;
+    width: 7%;
+    padding-left: 0.5%;
 }
 
 #task-inp {
+    flex-grow: 0.7;
     text-size-adjust: 30;
     height: 100%;
+    width: 84%;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-}
-
-#add-button {
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
+    border-width: 0;
+    margin: 0;
+    padding: 0;
     border: none;
     outline: none;
 }
 
-#add-button, #task-inp {
+#add-button {
+    width: 3%;
+    height: 100%;
     border-radius: 0;
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    border-width: 0;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
     border: none;
     outline: none;
 }
@@ -64,4 +84,8 @@ body {
 
 #add-button:active {
     box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+header#main-header {
+    padding-left: 1%;
 }
