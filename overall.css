@@ -12,20 +12,23 @@ body {
     background-attachment: fixed;
 }
 
-button {
+.button {
     margin: 0;
     padding: 0;
     border-width: 0;
     border: none;
     outline: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-button:active {
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
+.button:active {
+    transition-duration: 0.05s;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
 #page-container {
@@ -44,6 +47,26 @@ button:active {
     grid-template-rows: 15% 85%;
 }
 
+.low-border-radius {
+    border-radius: 3px;
+}
+
+.high-border-radius {
+    border-radius: 10px;
+}
+
+.vlow-opaque-container {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.low-opaque-container {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.medium-opaque-container {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 #inp-sec {
     grid-column: 1 / span 4;
     height: auto;
@@ -56,13 +79,12 @@ button:active {
 #inp {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.15);
     height: 70%;
 }
 
 #inp-lab {
     padding-top: 0.7%;
-    width: 7%;
+    width: auto;
     padding-left: 0.5%;
 }
 
@@ -83,47 +105,8 @@ button:active {
 #add-button {
     width: 3%;
     height: 100%;
-    border-radius: 0;
-    background-color: rgba(255, 255, 255, 0.2);
 }
-
-#add-button:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* #add-button:active {
-    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.5);
-} */
 
 header#main-header {
     padding-left: 1%;
-}
-
-.external-column {
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    padding-top: 5%;
-}
-
-.external-column > * {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    min-height: 10%;
-    padding-left: 5%;
-    padding-top: 5%;
-}
-
-#add-column-c {
-    padding-top: 15%;
-    padding-right: 0;
-    padding-left: 10%;
-}
-
-#add-column-button {
-    width: 90%;
-    height: 30%;
 }

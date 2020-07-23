@@ -8,7 +8,9 @@
         
         <title>Sajjad Todo</title>
         
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="overall.css">
+        <link rel="stylesheet" type="text/css" href="columns.css">
+        <link rel="stylesheet" type="text/css" href="tasks.css">
     
     </head>
     
@@ -24,56 +26,117 @@
             
             </header>
             
+
             <main id="main-container">
                 
                 <section id="inp-sec">
                     
-                    <div id="inp">
+                    <div class="vlow-opaque-container low-border-radius" id="inp">
                         
                         <label id="inp-lab">Add Todo:</label>
                         
                         <input id="task-inp" type="text">
                         
-                        <button id="add-button">Add</button>
+                        <button class="button medium-opaque-container low-border-radius" id="add-button">
+                            Add
+                        </button>
 
                     </div>
                 
                 </section>
                 
-                <div class="external-column" id="todo">
+
+                <section class="external-column" id="todo">
                     
-                    <div class="column">
+                    <div class="column vlow-opaque-container low-border-radius">
                         
                         <label><b>Todo</b></label>
                     
                     </div>
                 
-                </div>
+                </section>
                 
-                <div class="external-column" id="doing">
 
-                    <div class="column">
+                <section class="external-column" id="doing">
+
+                    <div class="column vlow-opaque-container low-border-radius">
                         
                         <label><b>Doing</b></label>
                     
                     </div>
 
-                </div>
+                </section>
                 
-                <div class="external-column" id="done">
 
-                    <div class="column">
+                <section class="external-column" id="done">
+
+                    <div class="column vlow-opaque-container low-border-radius">
                         
                         <label><b>Done</b></label>
+                        
+                        <div class="task low-opaque-container low-border-radius">
+                            
+                            <label>task name</label>
+
+                            <div class="operation-buttons">
+                                <button class="button medium-opaque-container high-border-radius">Todo</button>
+                                <button class="button medium-opaque-container high-border-radius">Doing</button>
+                                <button class="button medium-opaque-container high-border-radius">Done</button>
+                                <button class="button medium-opaque-container high-border-radius">Remove</button>
+                            </div>
+
+                        </div>
+
+                        <div class="task low-opaque-container low-border-radius">
+                            
+                            <label>task name</label>
+
+                            <div class="operation-buttons">
+                                <button class="button medium-opaque-container high-border-radius">Todo</button>
+                                <button class="button medium-opaque-container high-border-radius">Doing</button>
+                                <button class="button medium-opaque-container high-border-radius">Done</button>
+                                <button class="button medium-opaque-container high-border-radius">Remove</button>
+                            </div>
+
+                        </div>
+
+                        <div class="task low-opaque-container low-border-radius">
+                            
+                            <label>task name</label>
+
+                            <div class="operation-buttons">
+                                <button class="button medium-opaque-container high-border-radius">Todo</button>
+                                <button class="button medium-opaque-container high-border-radius">Doing</button>
+                                <button class="button medium-opaque-container high-border-radius">Done</button>
+                                <button class="button medium-opaque-container high-border-radius">Remove</button>
+                            </div>
+
+                        </div>
+
+                        <div class="task low-opaque-container low-border-radius">
+                            
+                            <label>task name</label>
+
+                            <div class="operation-buttons">
+                                <button class="button medium-opaque-container high-border-radius">Todo</button>
+                                <button class="button medium-opaque-container high-border-radius">Doing</button>
+                                <button class="button medium-opaque-container high-border-radius">Done</button>
+                                <button class="button medium-opaque-container high-border-radius">Remove</button>
+                            </div>
+
+                        </div>
                     
                     </div>
 
-                </div>
+                </section>
                 
-                <div class="external-column" id="add-column-c">
-                    <button id="add-column-button"><b>+</b></button>
-                </div>
-            
+
+                <section class="external-column" id="add-column-c">
+                    
+                    <button class="button medium-opaque-container low-border-radius" id="add-column-button"><b>+</b></button>
+
+                </section>
+
             </main>
         
         </div>

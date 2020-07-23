@@ -1,0 +1,29 @@
+.column > label {
+    margin-bottom: 5%;
+}
+.external-column {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-top: 5%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    min-height: 20%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+#add-column-c {
+    padding-top: 15%;
+    padding-right: 0;
+    padding-left: 10%;
+}
+
+#add-column-button {
+    width: 90%;
+    height: 40%;
+}
