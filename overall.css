@@ -12,6 +12,11 @@ body {
     background-attachment: fixed;
 }
 
+body > header {
+    position: fixed;
+    top: 0;
+}
+
 .button {
     margin: 0;
     padding: 0;
@@ -20,6 +25,8 @@ body {
     outline: none;
     transition-duration: 0.4s;
     cursor: pointer;
+    color: white;
+    font-family: sans-serif;
 }
 
 .button:hover {
