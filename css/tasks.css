@@ -1,0 +1,18 @@
+.columns > .external-column > .column > .task {
+    margin-top: 20px;
+    padding: 5%;
+}
+
+.columns > .external-column > .column > .task > .movement-buttons {
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.columns > .external-column > .column > .task > .movement-buttons > button {
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-top: 5px;
+}

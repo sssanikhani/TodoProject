@@ -1,135 +1,52 @@
 <!DOCTYPE html>
 
 <html>
-    
-    <head>
-        
-        <meta charset="UTF-8">
-        
-        <title>Sajjad Todo</title>
-        
-        <link rel="stylesheet" type="text/css" href="overall.css">
-        <link rel="stylesheet" type="text/css" href="columns.css">
-        <link rel="stylesheet" type="text/css" href="tasks.css">
-    
-    </head>
-    
-    <body>
-        
-        <div id="page-container">
-            
-            <header id="main-header">
-                
-                <h1>Sajjad Todo</h1>
-                
-                <p>Best Todo App in The Universe and Surrounding Areas</p>
-            
-            </header>
-            
 
-            <main id="main-container">
-                
-                <section id="inp-sec">
-                    
-                    <div class="vlow-opaque-container low-border-radius" id="inp">
-                        
-                        <label id="inp-lab">Add Todo:</label>
-                        
-                        <input id="task-inp" type="text">
-                        
-                        <button class="button medium-opaque-container low-border-radius" id="add-button">
-                            Add
-                        </button>
+<head>
 
-                    </div>
-                
-                </section>
-                
+    <meta charset="UTF-8">
 
-                <section class="external-column" id="todo">
-                    
-                    <div class="column vlow-opaque-container low-border-radius">
-                        
-                        <label><b>Todo</b></label>
+    <title>Sajjad Todo</title>
 
-                        <!-- <div class="task low-opaque-container low-border-radius">
-                            
-                            <label>task name</label>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/columns.css">
+    <link rel="stylesheet" type="text/css" href="css/tasks.css">
 
-                            <div class="operation-buttons">
-                                <button class="button medium-opaque-container high-border-radius">Todo</button>
-                                <button class="button medium-opaque-container high-border-radius">Doing</button>
-                                <button class="button medium-opaque-container high-border-radius">Done</button>
-                                <button class="button medium-opaque-container high-border-radius">Remove</button>
-                            </div>
+</head>
 
-                        </div>
+<body>
+    <header id="main-header">
 
-                        <div class="task low-opaque-container low-border-radius">
-                            
-                            <label>task name</label>
+        <h1>Sajjad Todo</h1>
 
-                            <div class="operation-buttons">
-                                <button class="button medium-opaque-container high-border-radius">Todo</button>
-                                <button class="button medium-opaque-container high-border-radius">Doing</button>
-                                <button class="button medium-opaque-container high-border-radius">Done</button>
-                                <button class="button medium-opaque-container high-border-radius">Remove</button>
-                            </div>
+        <p>Best Todo App in The Universe and Surrounding Areas</p>
 
-                        </div>
+    </header>
 
-                        <div class="task low-opaque-container low-border-radius">
-                            
-                            <label>task name</label>
+    <form class="add-column-form add-form vlow-opaque-container low-border-radius" id="add-column-form">
 
-                            <div class="operation-buttons">
-                                <button class="button medium-opaque-container high-border-radius">Todo</button>
-                                <button class="button medium-opaque-container high-border-radius">Doing</button>
-                                <button class="button medium-opaque-container high-border-radius">Done</button>
-                                <button class="button medium-opaque-container high-border-radius">Remove</button>
-                            </div>
+        <input class="column-inp text-inp" id="column-inp" type="text" placeholder="Enter Column Name Here">
 
-                        </div> -->
-                    
-                    </div>
-                
-                </section>
-                
+    </form>
 
-                <section class="external-column" id="doing">
+    <div class="columns" id="columns">
+    </div>
 
-                    <div class="column vlow-opaque-container low-border-radius">
-                        
-                        <label><b>Doing</b></label>
-                    
-                    </div>
+    <script>
+        const state = {
+            columns: []
+        }
 
-                </section>
-                
+        const elems = {
+            colInp: document.getElementById("column-inp"),
+            addColForm: document.getElementById("add-column-form"),
+            columnsElem: document.getElementById("columns")
+        } 
+    </script>
 
-                <section class="external-column" id="done">
-
-                    <div class="column vlow-opaque-container low-border-radius">
-                        
-                        <label><b>Done</b></label>
-                    
-                    </div>
-
-                </section>
-                
-
-                <section class="external-column" id="add-column-c">
-                    
-                    <button class="button medium-opaque-container low-border-radius" id="add-column-button"><h1>+</h1></button>
-
-                </section>
-
-            </main>
-        
-        </div>
-    
-    <script src="script.js"></script>
-
-    </body>
+    <script src="js/utils.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
 </html>
