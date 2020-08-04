@@ -22,6 +22,10 @@ function addColumnAction(colName) {
     render();
 }
 
+function preventDef(e) {
+    e.preventDefault();
+}
+
 function addTaskHandler(colID, taskContent) {
     if (!taskContent) return;
     addTaskAction(colID, taskContent);
@@ -35,6 +39,15 @@ function addTaskAction(colID, taskContent) {
             content: taskContent
         }
     );
+    render();
+}
+
+function moveTaskAction(fromID, toID, taskID) {
+    const from = selectByID(state.columns, fromID);
+    const to = selectByID(state.columns, toID);
+    const task = selectByID(from.tasks, taskID);
+    from.tasks = from.tasks.filter(function(task) { return task.id !== taskID});
+    to.tasks.push(task);
     render();
 }
 
